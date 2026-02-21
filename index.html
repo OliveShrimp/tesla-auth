@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tesla Auth Callback</title>
+</head>
+<body>
+  <h1>Tesla Auth Callback</h1>
+  <p>Copy the code below and paste it into OpenClaw:</p>
+  <h2 id="code"></h2>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('code').innerText = params.get('code');
+  </script>
+</body>
+</html>
